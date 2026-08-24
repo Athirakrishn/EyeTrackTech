@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import { Menu } from 'lucide-react';
+import { Menu, ChevronDown } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
@@ -29,25 +29,39 @@ export default function Navbar() {
             whileHover={{ scale: 1.05 }}
             className="flex-shrink-0 flex items-center"
           >
-            {/* Replicating the logo from screenshot */}
-            <Link href="/" className="flex flex-col items-center">
-              <div className="relative w-12 h-12 mb-1">
-                {/* Simplified CSS logo matching the shape */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 via-purple-600 to-red-500 rounded-full flex items-center justify-center shadow-md">
-                   <div className="w-8 h-8 border-4 border-t-transparent border-white rounded-full transform -rotate-45"></div>
-                </div>
-              </div>
-              <div className="text-center leading-tight">
-                <span className="text-[#f2392c] text-[10px] font-bold block tracking-wider">EYETRACK</span>
-                <span className={`text-[10px] font-bold block tracking-wider ${scrolled ? 'text-gray-900' : 'text-white'}`}>SOLUTIONS</span>
-              </div>
+            <Link href="/" className="flex items-center">
+              <img src="/eyetrack-logo.png" alt="EyeTrack Solutions Logo" className="h-20 w-auto" />
             </Link>
           </motion.div>
           
           <div className="hidden md:flex items-center space-x-12">
             {['HOME DIGITAL', 'SERVICES', 'ABOUT', 'CONTACT'].map((item, i) => {
+              if (item === 'SERVICES') {
+                const serviceLinks = [
+                  { name: 'CCTV Installation', href: '/services/cctv-installation' },
+                  { name: 'Home Automation', href: '/services/home-automation' },
+                  { name: 'Wireless Cameras', href: '/services/wireless-cameras' },
+                  { name: 'Security Solutions', href: '/services/security-solutions' },
+                ];
+                
+                return (
+                  <div key={i} className="relative group py-6">
+                    <button className={`${scrolled ? 'text-gray-700 hover:text-[#f2392c]' : 'text-white hover:text-gray-200'} transition-colors text-sm font-semibold tracking-wider flex items-center gap-1 uppercase`}>
+                      SERVICES
+                    </button>
+                    {/* Dropdown Menu */}
+                    <div className="absolute top-[80%] left-1/2 -translate-x-1/2 mt-2 w-64 bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden flex flex-col py-2">
+                      {serviceLinks.map((link, j) => (
+                        <Link key={j} href={link.href} className="px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#f2392c] transition-colors font-medium border-b border-gray-50 last:border-0">
+                          {link.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                );
+              }
+
               let href = '/';
-              if (item === 'SERVICES') href = '/services';
               if (item === 'ABOUT') href = '/about';
               if (item === 'CONTACT') href = '/contact';
 

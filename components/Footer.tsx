@@ -7,9 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-2xl font-bold tracking-tighter text-white mb-4">
-              EYE TRACK<span className="text-[#ff5e52] drop-shadow-md">TECH</span>
-            </h3>
+            <img src="/eyetrack-logo.png" alt="EyeTrack Solutions Logo" className="h-16 w-auto mb-6" />
             <p className="text-gray-300 max-w-xs">
               Specializing in security and automation solutions. Best CCTV service in Calicut.
             </p>
