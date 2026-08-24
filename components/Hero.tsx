@@ -48,8 +48,8 @@ export default function Hero() {
           </motion.p>
           
           <motion.div 
-            initial={{ opacity: 0, w: 0 }}
-            animate={{ opacity: 1, w: "100%" }}
+            initial={{ opacity: 0, width: 0 }}
+            animate={{ opacity: 1, width: "100%" }}
             transition={{ duration: 0.8, delay: 0.8 }}
             className="h-px bg-white/30 w-full mb-10"
           />

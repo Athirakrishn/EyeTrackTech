@@ -1,33 +1,45 @@
 "use client";
 
-import { Video, Home, Wifi, ShieldAlert } from 'lucide-react';
+import { Video, Home, Fingerprint, Lock, Network, Monitor } from 'lucide-react';
 import { motion, Variants } from 'framer-motion';
 import Link from 'next/link';
 
 const services = [
   {
-    title: 'CCTV Camera Installation',
-    description: 'High-definition surveillance systems for complete peace of mind, available for both residential and commercial properties.',
+    title: 'CCTV Installation',
+    description: 'We provide expert CCTV installation services designed to keep your Property safe and secure with HD and IP camera systems.',
     icon: Video,
     href: '/services/cctv-installation',
   },
   {
-    title: 'Home & Gate Automation',
-    description: 'Smart automation solutions to control your home environment and gates remotely with ease and security.',
+    title: 'Biometric Devices',
+    description: 'High-quality biometric devices for secure access control supporting fingerprint, face Recognition, and RFID.',
+    icon: Fingerprint,
+    href: '/services/biometric-devices',
+  },
+  {
+    title: 'Smart Locks',
+    description: 'Upgrade your security with advanced smart locks supporting fingerprint, PIN, RFID card, and mobile app control.',
+    icon: Lock,
+    href: '/services/smart-locks',
+  },
+  {
+    title: 'Home/Gate Automation',
+    description: 'Transform your home or business with intelligent automation systems to control doors, lights, and gates remotely.',
     icon: Home,
-    href: '/services/home-automation',
+    href: '/services/home-gate-automation',
   },
   {
-    title: 'IP, WiFi & 4G Cameras',
-    description: 'Advanced wireless and cellular camera setups ensuring you stay connected and secure, even in remote locations.',
-    icon: Wifi,
-    href: '/services/wireless-cameras',
+    title: 'Network Cabling',
+    description: 'Professional structured network cabling solutions for offices and homes using CAT6 and fiber optic cables.',
+    icon: Network,
+    href: '/services/network-cabling',
   },
   {
-    title: 'Security Solutions',
-    description: 'Comprehensive security consulting and implementation tailored to your specific needs and vulnerabilities.',
-    icon: ShieldAlert,
-    href: '/services/security-solutions',
+    title: 'IT Consulting',
+    description: 'Make the right technology decisions. We analyze, identify, and design customized solutions that boost efficiency and security.',
+    icon: Monitor,
+    href: '/services/it-consulting',
   },
 ];
 
@@ -68,7 +80,7 @@ export default function Services() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
         >
           {services.map((service, index) => {
             const Icon = service.icon;

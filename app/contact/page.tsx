@@ -7,7 +7,7 @@ export default function ContactPage() {
   return (
     <main className="flex-grow pb-24 relative overflow-hidden bg-white">
       {/* Page Hero */}
-      <div className="relative pt-32 pb-20 flex items-center justify-center min-h-[40vh] mb-16">
+      <div className="relative pt-32 pb-20 flex items-center justify-center min-h-screen mb-16">
         <div className="absolute inset-0 z-0">
           <div 
             className="absolute inset-0 bg-cover bg-center"

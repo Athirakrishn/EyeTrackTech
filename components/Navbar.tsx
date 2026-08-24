@@ -39,9 +39,11 @@ export default function Navbar() {
               if (item === 'SERVICES') {
                 const serviceLinks = [
                   { name: 'CCTV Installation', href: '/services/cctv-installation' },
-                  { name: 'Home Automation', href: '/services/home-automation' },
-                  { name: 'Wireless Cameras', href: '/services/wireless-cameras' },
-                  { name: 'Security Solutions', href: '/services/security-solutions' },
+                  { name: 'Biometric Devices', href: '/services/biometric-devices' },
+                  { name: 'Smart Locks', href: '/services/smart-locks' },
+                  { name: 'Home/Gate Automation', href: '/services/home-gate-automation' },
+                  { name: 'Network Cabling', href: '/services/network-cabling' },
+                  { name: 'IT Consulting', href: '/services/it-consulting' },
                 ];
                 
                 return (
