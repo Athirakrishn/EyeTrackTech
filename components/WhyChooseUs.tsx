@@ -2,6 +2,7 @@
 
 import { Shield, Clock, ThumbsUp, Wrench } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 const reasons = [
   {
@@ -27,6 +28,8 @@ const reasons = [
 ];
 
 export default function WhyChooseUs() {
+  const [isFlipped, setIsFlipped] = useState(false);
+
   return (
     <section id="about" className="py-32 bg-blue-50 relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_rgba(242,57,44,0.05),_transparent_50%)]"></div>
@@ -74,29 +77,59 @@ export default function WhyChooseUs() {
             </div>
           </motion.div>
           
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="lg:w-1/2 relative w-full aspect-square max-w-md mx-auto"
+          <div 
+            className="lg:w-1/2 relative w-full aspect-square max-w-md mx-auto cursor-pointer"
+            style={{ perspective: 1000 }}
+            onMouseEnter={() => setIsFlipped(true)}
+            onMouseLeave={() => setIsFlipped(false)}
+            onClick={() => setIsFlipped(!isFlipped)}
           >
             {/* Decorative background blur */}
             <div className="absolute inset-0 bg-gradient-to-tr from-[#f2392c] to-blue-400 rounded-full opacity-10 blur-3xl animate-pulse"></div>
             
-            <div className="relative h-full w-full border border-gray-100 bg-white shadow-xl rounded-[2.5rem] overflow-hidden flex flex-col items-center justify-center text-center p-8">
-              <div className="absolute inset-0 bg-[url('/biometric.jpg')] bg-cover bg-center opacity-5 mix-blend-overlay"></div>
-              
-              <motion.div 
-                whileHover={{ scale: 1.1, rotate: 5 }}
-                className="relative z-10 w-24 h-24 rounded-full bg-gradient-to-br from-[#f2392c] to-[#ff4b3e] flex items-center justify-center mb-8 shadow-[0_0_40px_rgba(242,57,44,0.3)] cursor-pointer"
+            <motion.div
+              className="w-full h-full relative"
+              style={{ transformStyle: 'preserve-3d' }}
+              animate={{ rotateY: isFlipped ? 180 : 0 }}
+              transition={{ duration: 0.6, ease: 'easeInOut' }}
+            >
+              {/* Front Side */}
+              <div 
+                className="absolute inset-0 w-full h-full border border-gray-100 bg-white shadow-xl rounded-[2.5rem] overflow-hidden flex flex-col items-center justify-center text-center p-8"
+                style={{ backfaceVisibility: 'hidden' }}
               >
-                 <Shield size={48} className="text-white" strokeWidth={1.5} />
-              </motion.div>
-              <h3 className="relative z-10 text-3xl font-bold text-gray-900 mb-4 tracking-tight">100% Secure</h3>
-              <p className="relative z-10 text-gray-600 text-lg font-light">Guaranteed protection for your assets.</p>
-            </div>
-          </motion.div>
+                <div className="absolute inset-0 bg-[url('/biometric.jpg')] bg-cover bg-center opacity-5 mix-blend-overlay"></div>
+                
+                <div 
+                  className="relative z-10 w-24 h-24 rounded-full bg-gradient-to-br from-[#f2392c] to-[#ff4b3e] flex items-center justify-center mb-8 shadow-[0_0_40px_rgba(242,57,44,0.3)]"
+                >
+                   <Shield size={48} className="text-white" strokeWidth={1.5} />
+                </div>
+                <h3 className="relative z-10 text-3xl font-bold text-gray-900 mb-4 tracking-tight">100% Secure</h3>
+                <p className="relative z-10 text-gray-600 text-lg font-light">Guaranteed protection for your assets.</p>
+              </div>
+
+              {/* Back Side */}
+              <div 
+                className="absolute inset-0 w-full h-full border border-gray-100 bg-white shadow-xl rounded-[2.5rem] overflow-hidden flex flex-col items-center justify-center text-center p-8"
+                style={{ 
+                  backfaceVisibility: 'hidden',
+                  transform: 'rotateY(180deg)'
+                }}
+              >
+                <img src="/cctv-office.jpg" alt="Security Control Center" className="absolute inset-0 w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-black/60 z-10" />
+                
+                <div className="relative z-20 text-white p-4">
+                  <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center mb-6 mx-auto border border-white/30">
+                    <Shield size={32} className="text-white" strokeWidth={1.5} />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-2 tracking-tight">Advanced Protection</h3>
+                  <p className="text-sm text-gray-200 font-light">State-of-the-art surveillance & security setups protecting your assets 24/7.</p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </div>
     </section>

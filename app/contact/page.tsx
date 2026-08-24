@@ -16,7 +16,9 @@ export default function ContactPage() {
           <div className="absolute inset-0 bg-black/70 z-10" />
         </div>
         <div className="relative z-20 text-center px-4">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight">Contact <span className="text-gradient">Us</span></h1>
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight">
+            Contact <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#8a3ffc] via-[#f72585] to-[#ff7e15]">Us</span>
+          </h1>
           <p className="text-gray-200 max-w-2xl mx-auto text-lg">
             Ready to secure your property? Get in touch with our experts today for a free consultation.
           </p>
@@ -40,27 +42,27 @@ export default function ContactPage() {
               
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-[#f2392c]/10 flex items-center justify-center text-[#f2392c] flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-[#8a3ffc]/10 flex items-center justify-center text-[#8a3ffc] flex-shrink-0">
                     <Phone size={24} />
                   </div>
                   <div>
                     <p className="text-gray-900 font-bold text-lg">Phone</p>
-                    <a href="tel:+917994357565" className="text-gray-600 hover:text-[#f2392c] transition-colors">+91 7994357565</a>
+                    <a href="tel:+917994357565" className="text-gray-600 hover:text-[#8a3ffc] transition-colors">+91 7994357565</a>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-[#f2392c]/10 flex items-center justify-center text-[#f2392c] flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-[#8a3ffc]/10 flex items-center justify-center text-[#8a3ffc] flex-shrink-0">
                     <Mail size={24} />
                   </div>
                   <div>
                     <p className="text-gray-900 font-bold text-lg">Email</p>
-                    <a href="mailto:info@eyetrack-tech.com" className="text-gray-600 hover:text-[#f2392c] transition-colors">info@eyetrack-tech.com</a>
+                    <a href="mailto:info@eyetrack-tech.com" className="text-gray-600 hover:text-[#8a3ffc] transition-colors">info@eyetrack-tech.com</a>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-[#f2392c]/10 flex items-center justify-center text-[#f2392c] flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-[#8a3ffc]/10 flex items-center justify-center text-[#8a3ffc] flex-shrink-0">
                     <MapPin size={24} />
                   </div>
                   <div>
@@ -85,22 +87,39 @@ export default function ContactPage() {
             <form className="glass-panel p-8 rounded-[2rem] border border-gray-100 shadow-sm bg-gray-50/50 flex flex-col gap-6" onSubmit={(e) => e.preventDefault()}>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
-                <input type="text" id="name" className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:border-[#f2392c] focus:ring-1 focus:ring-[#f2392c] transition-colors" placeholder="John Doe" />
+                <input type="text" id="name" className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:border-[#8a3ffc] focus:ring-1 focus:ring-[#8a3ffc] transition-colors" placeholder="John Doe" />
               </div>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
-                <input type="email" id="email" className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:border-[#f2392c] focus:ring-1 focus:ring-[#f2392c] transition-colors" placeholder="john@example.com" />
+                <input type="email" id="email" className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:border-[#8a3ffc] focus:ring-1 focus:ring-[#8a3ffc] transition-colors" placeholder="john@example.com" />
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                <textarea id="message" rows={4} className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:border-[#f2392c] focus:ring-1 focus:ring-[#f2392c] transition-colors resize-none" placeholder="How can we help you?"></textarea>
+                <textarea id="message" rows={4} className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:border-[#8a3ffc] focus:ring-1 focus:ring-[#8a3ffc] transition-colors resize-none" placeholder="How can we help you?"></textarea>
               </div>
-              <button type="submit" className="w-full bg-[#f2392c] hover:bg-[#d12e24] text-white font-bold py-4 rounded-xl transition-colors mt-2 shadow-[0_4px_14px_rgba(242,57,44,0.3)]">
+              <button type="submit" className="w-full bg-gradient-to-r from-[#8a3ffc] via-[#f72585] to-[#ff7e15] hover:opacity-90 text-white font-bold py-4 rounded-xl transition-all mt-2 shadow-[0_4px_14px_rgba(138,63,252,0.3)]">
                 Send Message
               </button>
             </form>
           </motion.div>
         </div>
+
+        {/* Google Map */}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="mt-20 w-full h-[450px] rounded-[2.5rem] overflow-hidden shadow-lg border border-gray-100 relative"
+        >
+          <iframe 
+            src="https://maps.google.com/maps?q=Kizhur,%20Perambra%20road,%20Payyoli,%20Kozhikode,%20Kerala%20673522&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            className="absolute inset-0 w-full h-full border-0"
+            allowFullScreen={false} 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </motion.div>
       </div>
     </main>
   );

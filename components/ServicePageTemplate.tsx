@@ -6,16 +6,17 @@ interface ServicePageProps {
   description: string;
   longDescription: string;
   Icon: LucideIcon;
+  bgImage: string;
 }
 
-export default function ServicePageTemplate({ title, description, longDescription, Icon }: ServicePageProps) {
+export default function ServicePageTemplate({ title, description, longDescription, Icon, bgImage }: ServicePageProps) {
   return (
     <main className="flex-grow pb-24 bg-gray-50">
       <div className="relative pt-32 pb-20 flex items-center justify-center min-h-screen">
         <div className="absolute inset-0 z-0">
           <div 
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('/cctv-in-home.jpg')" }}
+            style={{ backgroundImage: `url('${bgImage}')` }}
           />
           <div className="absolute inset-0 bg-black/70 z-10" />
         </div>
