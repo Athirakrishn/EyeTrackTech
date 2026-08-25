@@ -5,13 +5,23 @@ import { ChevronRight } from 'lucide-react';
 export default function AboutPage() {
   return (
     <main className="flex-grow bg-white">
-      {/* Page Hero */}
       <div className="relative pt-32 pb-20 flex items-center justify-center min-h-screen">
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          {/* Fallback Background Image */}
           <div 
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: "url('/cctv-office.jpg')" }}
           />
+          {/* Background Video */}
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover z-0"
+          >
+            <source src="/CCTV_installation_and_smart_locks.mp4" type="video/mp4" />
+          </video>
           <div className="absolute inset-0 bg-black/70 z-10" />
         </div>
         <div className="relative z-20 text-center px-4">

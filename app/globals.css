@@ -5,8 +5,10 @@
 }
 
 :root {
-  --background: #ffffff; /* White background */
-  --foreground: #111827; /* Dark gray text */
+  --background: #ffffff;
+  /* White background */
+  --foreground: #111827;
+  /* Dark gray text */
   --primary: #f2392c;
   --primary-hover: #ff4b3e;
 }
@@ -29,7 +31,7 @@ body {
 }
 
 .glass-panel {
-  background: linear-gradient(135deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.4) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(0, 0, 0, 0.05);
@@ -37,7 +39,7 @@ body {
 }
 
 .text-gradient {
-  background: linear-gradient(to right, #f2392c, #ff6b6b);
+  background: linear-gradient(to right, #8a3ffc, #f72585, #ff7e15);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -45,13 +47,14 @@ body {
 .premium-border {
   position: relative;
 }
+
 .premium-border::before {
   content: "";
   position: absolute;
   inset: -1px;
   border-radius: inherit;
   padding: 1px;
-  background: linear-gradient(to bottom right, rgba(0,0,0,0.1), rgba(0,0,0,0.02));
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.02));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
