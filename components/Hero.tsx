@@ -9,13 +9,14 @@ export default function Hero() {
       {/* Background Image with Ken Burns Effect */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <motion.div 
-          initial={{ scale: 1.15, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 2.2, ease: "easeOut" }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.8, ease: "easeOut" }}
           className="absolute inset-0 bg-cover bg-center"
           style={{ 
             backgroundImage: "url('/digital lockd.png')",
             backgroundPosition: "center",
+            backgroundAttachment: "fixed"
           }}
         />
         <div className="absolute inset-0 bg-black/65 z-10" />
