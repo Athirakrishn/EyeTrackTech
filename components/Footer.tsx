@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const FacebookIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -53,7 +54,7 @@ export default function Footer() {
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#f2392c]/50 to-transparent"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
             <img src="/eyetrack-logo.png" alt="EyeTrack Solutions Logo" className="h-16 w-auto mb-6" />
             <p className="text-gray-300 max-w-xs mb-6">
@@ -90,13 +91,29 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <h4 className="text-lg font-bold text-white mb-4">Contact Us</h4>
-            <p className="text-gray-300 mb-2">Phone: +91 7994357565</p>
-            <p className="text-gray-300">Email: info@eyetrack-tech.com</p>
+            <h4 className="text-lg font-bold text-white mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-8 after:h-0.5 after:bg-[#f2392c]">Navigation</h4>
+            <ul className="space-y-3">
+              <li><Link href="/" className="text-gray-300 hover:text-[#ff7e15] transition-colors text-sm uppercase tracking-wider font-semibold">Home Digital</Link></li>
+              <li><Link href="/about" className="text-gray-300 hover:text-[#ff7e15] transition-colors text-sm uppercase tracking-wider font-semibold">About</Link></li>
+              <li><Link href="/contact" className="text-gray-300 hover:text-[#ff7e15] transition-colors text-sm uppercase tracking-wider font-semibold">Contact</Link></li>
+            </ul>
           </div>
           <div>
-            <h4 className="text-lg font-bold text-white mb-4">Location</h4>
-            <p className="text-gray-300 max-w-xs">
+            <h4 className="text-lg font-bold text-white mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-8 after:h-0.5 after:bg-[#f2392c]">Services</h4>
+            <ul className="space-y-2">
+              <li><Link href="/services/cctv-installation" className="text-gray-300 hover:text-[#ff7e15] transition-colors text-xs uppercase tracking-wider font-medium">CCTV Installation</Link></li>
+              <li><Link href="/services/biometric-devices" className="text-gray-300 hover:text-[#ff7e15] transition-colors text-xs uppercase tracking-wider font-medium">Biometric Devices</Link></li>
+              <li><Link href="/services/smart-locks" className="text-gray-300 hover:text-[#ff7e15] transition-colors text-xs uppercase tracking-wider font-medium">Smart Locks</Link></li>
+              <li><Link href="/services/home-gate-automation" className="text-gray-300 hover:text-[#ff7e15] transition-colors text-xs uppercase tracking-wider font-medium">Home & Gate Automation</Link></li>
+              <li><Link href="/services/network-cabling" className="text-gray-300 hover:text-[#ff7e15] transition-colors text-xs uppercase tracking-wider font-medium">Network Cabling</Link></li>
+              <li><Link href="/services/it-consulting" className="text-gray-300 hover:text-[#ff7e15] transition-colors text-xs uppercase tracking-wider font-medium">IT Consulting</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-lg font-bold text-white mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-8 after:h-0.5 after:bg-[#f2392c]">Contact Us</h4>
+            <p className="text-gray-300 mb-2 text-sm">Phone: +91 7994357565</p>
+            <p className="text-gray-300 mb-4 text-sm">Email: info@eyetrack-tech.com</p>
+            <p className="text-gray-300 text-sm leading-relaxed max-w-xs">
               Kizhur, Perambra road, Payyoli<br />
               Kozhikode, Kerala 673522<br />
               India

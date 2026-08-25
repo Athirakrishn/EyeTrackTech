@@ -4,6 +4,7 @@ import Services from '@/components/Services';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import Testimonials from '@/components/Testimonials';
 import HomeSecuritySolutions from '@/components/HomeSecuritySolutions';
+import SupportSection from '@/components/SupportSection';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Services />
       <WhyChooseUs />
       <Testimonials />
+      <SupportSection />
     </main>
   );
 }
