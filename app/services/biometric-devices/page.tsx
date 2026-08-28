@@ -1,6 +1,6 @@
 import { Fingerprint } from 'lucide-react';
 import Stats from '@/components/Stats';
-import BiometricSection from '@/components/BiometricSection';
+import BiometricHero from '@/components/BiometricHero';
 
 const biometricProducts = [
   {
@@ -23,38 +23,53 @@ export default function Page() {
   return (
     <main className="flex-grow pb-24 bg-gray-50">
       
-      {/* Hero Banner Section */}
-      <div className="relative pt-32 pb-20 flex items-center justify-center min-h-[40vh] bg-slate-900 overflow-hidden">
-        {/* Background image overlay */}
-        <div className="absolute inset-0 z-0">
-          <div 
-            className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{ backgroundImage: "url('/biometric.jpg')" }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-slate-900/50 via-slate-950/80 to-slate-950 z-10" />
-        </div>
-        <div className="relative z-20 text-center px-4 max-w-3xl">
-          <div className="flex justify-center mb-6">
-            <div className="w-20 h-20 bg-[#06b6d4]/20 rounded-2xl flex items-center justify-center border border-[#06b6d4]/40 shadow-[0_0_30px_rgba(6,182,212,0.15)]">
-              <Fingerprint className="text-white" size={40} strokeWidth={1.5} />
+      {/* 3D Biometric Hero Header */}
+      <BiometricHero
+        title="Biometric Devices"
+        description="We provide high-quality biometric devices for secure access control and attendance management in Payyoli, Calicut, and across Kerala."
+        longDescription="Our setups support fingerprint scanning, facial recognition, and RFID cards, ensuring accurate, spoof-proof, and fast authentication for offices, schools, and commercial institutions. From mounting and wiring to configuring database reports, we help you manage authorization points safely and efficiently."
+        bgImage="/biometric.jpg"
+      />
+
+      {/* Service Details Card */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="bg-white rounded-[2.5rem] shadow-sm border border-gray-100 overflow-hidden grid grid-cols-1 lg:grid-cols-12 shadow-[0_8px_30px_rgba(0,0,0,0.015)]">
+          {/* Side Brand Panel */}
+          <div className="lg:col-span-4 bg-gradient-to-br from-slate-900 via-slate-800 to-black p-10 text-white flex flex-col justify-between relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#06b6d4]/15 rounded-full blur-2xl pointer-events-none" />
+            <div className="absolute bottom-0 left-0 w-32 h-32 bg-[#f2392c]/8 rounded-full blur-2xl pointer-events-none" />
+            
+            <div className="relative z-10">
+              <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center mb-8 border border-white/10">
+                <Fingerprint className="text-[#06b6d4]" size={32} strokeWidth={1.5} />
+              </div>
+              <h2 className="text-2xl font-bold mb-4 tracking-tight uppercase">Biometrics</h2>
+              <div className="h-0.5 w-10 bg-[#06b6d4] rounded-full mb-6" />
+            </div>
+            
+            <div className="mt-8 relative z-10">
+              <p className="text-xs text-gray-400 uppercase tracking-widest font-semibold mb-2">Our Promise</p>
+              <p className="text-base font-light leading-relaxed text-gray-200">
+                High-quality components, professional setup, and dedicated customer support.
+              </p>
             </div>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-3 tracking-tight">Biometric Devices</h1>
-          <div className="h-0.5 w-12 bg-[#06b6d4] mx-auto rounded-full mb-3" />
-          <p className="text-gray-400 text-xs md:text-sm font-semibold tracking-widest uppercase">
-            Time Attendance & Smart Access Control
-          </p>
+          
+          {/* Main Info Panel */}
+          <div className="lg:col-span-8 p-8 md:p-12 flex flex-col justify-center">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#8a3ffc] mb-3 block">Service Details</span>
+            <p className="text-gray-800 text-lg leading-relaxed mb-6 font-semibold border-l-4 border-[#06b6d4] pl-5">
+              Secure fingerprint, face, and RFID-based access control and time attendance terminals for businesses and institutions in Calicut.
+            </p>
+            <p className="text-gray-600 text-base leading-relaxed font-light">
+              We deploy multi-modal biometric terminals supporting fingerprint scanning, 3D facial depth recognition, palm verification, and RFID card access. Each system includes cloud-synced attendance logs, configurable user schedules, anti-spoofing liveness detection, and mobile management dashboards. Perfect for offices, schools, factories, and gated communities.
+            </p>
+          </div>
         </div>
       </div>
 
-      {/* Interactive 3D Biometric Animation & Service Details Section */}
-      <BiometricSection
-        description="We provide high-quality biometric devices for secure access control and attendance management in Payyoli, Calicut, and across Kerala."
-        longDescription="Our setups support fingerprint scanning, facial recognition, and RFID cards, ensuring accurate, spoof-proof, and fast authentication for offices, schools, and commercial institutions. From mounting and wiring to configuring database reports, we help you manage authorization points safely and efficiently."
-      />
-
       {/* Featured Products Grid */}
-      <div id="products" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 scroll-mt-24">
+      <div id="products" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 scroll-mt-24">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4 tracking-tight">Featured Products</h2>
           <div className="h-1 w-20 bg-gradient-to-r from-[#06b6d4] to-[#8a3ffc] mx-auto rounded-full" />

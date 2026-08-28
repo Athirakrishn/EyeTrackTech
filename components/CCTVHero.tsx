@@ -60,7 +60,7 @@ export default function CCTVHero({ title, description, longDescription, bgImage 
       {/* Background Image with Dark Overlay */}
       <div className="absolute inset-0 z-0">
         <div 
-          className="absolute inset-0 bg-cover bg-center opacity-25"
+          className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{ backgroundImage: `url('${bgImage}')` }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950/60 via-slate-950/90 to-slate-950 z-10" />
@@ -89,10 +89,6 @@ export default function CCTVHero({ title, description, longDescription, bgImage 
               
               <p className="text-gray-300 text-lg leading-relaxed max-w-2xl font-light">
                 {description}
-              </p>
-              
-              <p className="text-gray-400 text-base leading-relaxed max-w-2xl font-light">
-                {longDescription}
               </p>
             </div>
 

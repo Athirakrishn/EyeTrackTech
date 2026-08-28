@@ -1,55 +1,55 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { Award, Compass, ShieldCheck, Activity } from "lucide-react";
+import { Fingerprint, ScanFace, ShieldCheck, Smartphone } from "lucide-react";
 
-// Dynamically import Three.js consulting canvas with SSR disabled to prevent server-side errors
-const ConsultingCanvas = dynamic(() => import("./ConsultingCanvas"), {
+// Dynamically import Three.js biometric canvas with SSR disabled to prevent server-side errors
+const BiometricCanvas = dynamic(() => import("./BiometricCanvas"), {
   ssr: false,
   loading: () => (
     <div className="w-full h-full min-h-[380px] md:min-h-[440px] bg-slate-950 rounded-[2.5rem] border border-slate-800 flex items-center justify-center relative overflow-hidden">
       <div className="flex flex-col items-center gap-3">
-        <span className="w-8 h-8 rounded-full border-2 border-t-[#8a3ffc] border-slate-800 animate-spin" />
-        <span className="font-mono text-xs text-gray-500 uppercase tracking-widest">Initializing 3D Core...</span>
+        <span className="w-8 h-8 rounded-full border-2 border-t-[#06b6d4] border-slate-800 animate-spin" />
+        <span className="font-mono text-xs text-gray-500 uppercase tracking-widest">Booting Biometric Module...</span>
       </div>
     </div>
   ),
 });
 
-interface ConsultingHeroProps {
+interface BiometricHeroProps {
   title: string;
   description: string;
   longDescription: string;
   bgImage: string;
 }
 
-export default function ConsultingHero({ title, description, longDescription, bgImage }: ConsultingHeroProps) {
-  const consultingFeatures = [
+export default function BiometricHero({ title, description, longDescription, bgImage }: BiometricHeroProps) {
+  const biometricFeatures = [
     {
-      icon: Compass,
-      title: "Digital Strategy",
-      description: "Custom blueprints aligned with your business milestones.",
-      color: "text-[#8a3ffc]",
-      bgColor: "bg-[#8a3ffc]/10"
-    },
-    {
-      icon: Activity,
-      title: "Infrastructure Tuning",
-      description: "Optimizing server, query, and network load bottlenecks.",
+      icon: Fingerprint,
+      title: "Multi-Biometric Sensors",
+      description: "Fingerprint, palm, and iris scanners for layered verification.",
       color: "text-[#06b6d4]",
       bgColor: "bg-[#06b6d4]/10"
     },
     {
+      icon: ScanFace,
+      title: "3D Facial Recognition",
+      description: "Depth-cloud face mapping with anti-spoofing liveness checks.",
+      color: "text-[#8a3ffc]",
+      bgColor: "bg-[#8a3ffc]/10"
+    },
+    {
       icon: ShieldCheck,
-      title: "Cybersecurity Audit",
-      description: "Identifying vulnerabilities and hardening network nodes.",
+      title: "Access Control Logs",
+      description: "Real-time attendance and entry logs with cloud backups.",
       color: "text-[#f2392c]",
       bgColor: "bg-[#f2392c]/10"
     },
     {
-      icon: Award,
-      title: "Scalability Planning",
-      description: "Enterprise cloud configurations designed for growth.",
+      icon: Smartphone,
+      title: "Remote Management",
+      description: "Configure users, schedules, and reports from your mobile.",
       color: "text-emerald-400",
       bgColor: "bg-emerald-500/10"
     }
@@ -67,8 +67,8 @@ export default function ConsultingHero({ title, description, longDescription, bg
       </div>
 
       {/* Background Cyberpunk Accents */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#8a3ffc]/10 rounded-full blur-3xl pointer-events-none -z-10" />
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#06b6d4]/8 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#06b6d4]/10 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#8a3ffc]/8 rounded-full blur-3xl pointer-events-none -z-10" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.15),rgba(255,255,255,0))] -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10">
@@ -78,13 +78,13 @@ export default function ConsultingHero({ title, description, longDescription, bg
           <div className="lg:col-span-6 space-y-8">
             <div className="space-y-4">
               {/* Tech Badge */}
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700/80 text-xs font-semibold tracking-wider text-[#8a3ffc] uppercase shadow-sm">
-                <span className="w-2 h-2 rounded-full bg-[#8a3ffc] animate-pulse" />
-                Strategic IT Consulting & Systems
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700/80 text-xs font-semibold tracking-wider text-[#06b6d4] uppercase shadow-sm">
+                <span className="w-2 h-2 rounded-full bg-[#06b6d4] animate-pulse" />
+                Secure Authentication & Access Control
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
-                Premium <span className="bg-gradient-to-r from-[#8a3ffc] via-[#f2392c] to-[#06b6d4] bg-clip-text text-transparent">{title}</span>
+                Premium <span className="bg-gradient-to-r from-[#06b6d4] via-[#8a3ffc] to-[#f2392c] bg-clip-text text-transparent">{title}</span>
               </h1>
               
               <p className="text-gray-300 text-lg leading-relaxed max-w-2xl font-light">
@@ -94,7 +94,7 @@ export default function ConsultingHero({ title, description, longDescription, bg
 
             {/* Features Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {consultingFeatures.map((feature, idx) => {
+              {biometricFeatures.map((feature, idx) => {
                 const Icon = feature.icon;
                 return (
                   <div key={idx} className="flex gap-4 p-4 rounded-2xl bg-slate-800/40 border border-slate-800 hover:border-slate-700 hover:bg-slate-800/60 transition-all duration-300">
@@ -114,12 +114,12 @@ export default function ConsultingHero({ title, description, longDescription, bg
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <a 
                 href="#products"
-                className="px-8 py-3.5 rounded-xl text-center font-bold text-sm bg-gradient-to-r from-[#8a3ffc] to-[#06b6d4] hover:from-[#a78bfa] hover:to-[#38bdf8] text-white shadow-lg shadow-purple-500/20 transition-all duration-300 hover:scale-[1.02]"
+                className="px-8 py-3.5 rounded-xl text-center font-bold text-sm bg-gradient-to-r from-[#06b6d4] to-[#8a3ffc] hover:from-[#38bdf8] hover:to-[#a78bfa] text-white shadow-lg shadow-cyan-500/20 transition-all duration-300 hover:scale-[1.02]"
               >
                 Explore Products
               </a>
               <a 
-                href="https://wa.me/917994357565?text=Hello!%20I'm%20interested%20in%20your%20IT%20Consulting%20services."
+                href="https://wa.me/917994357565?text=Hello!%20I'm%20interested%20in%20your%20Biometric%20Device%20services."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-3.5 rounded-xl text-center font-bold text-sm bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 transition-all duration-300 hover:scale-[1.02]"
@@ -129,12 +129,12 @@ export default function ConsultingHero({ title, description, longDescription, bg
             </div>
           </div>
 
-          {/* Right Column: Three.js Interactive IT Globe View */}
+          {/* Right Column: Three.js Interactive Biometric Terminal */}
           <div className="lg:col-span-6 relative w-full flex justify-center items-center">
             {/* Background glowing aura decoration */}
-            <div className="absolute -inset-4 bg-gradient-to-tr from-[#8a3ffc]/20 to-[#06b6d4]/20 rounded-[3.5rem] blur-2xl pointer-events-none opacity-50" />
-            <div className="relative w-full aspect-square max-w-[500px] lg:max-w-none">
-              <ConsultingCanvas />
+            <div className="absolute -inset-4 bg-gradient-to-tr from-[#06b6d4]/20 to-[#8a3ffc]/20 rounded-[3.5rem] blur-2xl pointer-events-none opacity-50" />
+            <div className="relative w-full aspect-[4/5] max-w-[450px] lg:max-w-none">
+              <BiometricCanvas />
             </div>
           </div>
 
