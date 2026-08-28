@@ -111,8 +111,8 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="text-lg font-bold text-white mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-8 after:h-0.5 after:bg-[#f2392c]">Contact Us</h4>
-            <p className="text-gray-300 mb-2 text-sm">Phone: +91 7994357565</p>
-            <p className="text-gray-300 mb-4 text-sm">Email: info@eyetrack-tech.com</p>
+            <p className="text-gray-300 mb-2 text-sm">Phone: <a href="tel:+917994357565" className="hover:text-[#f2392c] transition-colors">+91 7994357565</a></p>
+            <p className="text-gray-300 mb-4 text-sm">Email: <a href="mailto:info@eyetrack-tech.com" className="hover:text-[#f2392c] transition-colors">info@eyetrack-tech.com</a></p>
             <p className="text-gray-300 text-sm leading-relaxed max-w-xs">
               Kizhur, Perambra road, Payyoli<br />
               Kozhikode, Kerala 673522<br />
