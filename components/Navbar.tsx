@@ -21,8 +21,11 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      // Trigger fixed navbar after scrolling past most of the hero section
+      setScrolled(window.scrollY > (window.innerHeight * 0.8));
     };
+    // Initial check in case page is reloaded halfway down
+    handleScroll();
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -47,7 +50,7 @@ export default function Navbar() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className={`fixed w-full z-50 top-0 transition-all duration-500 ${scrolled ? 'bg-white/95 backdrop-blur-md py-4 shadow-sm' : 'bg-transparent py-6'}`}
+        className={`${scrolled ? 'fixed bg-white/95 backdrop-blur-md py-4 shadow-sm animate-in slide-in-from-top-full' : 'absolute bg-transparent py-6'} w-full z-50 top-0 transition-all duration-500`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
