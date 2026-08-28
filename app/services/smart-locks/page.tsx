@@ -28,6 +28,7 @@ export default function Page() {
         title="Smart Locks"
         description="We provide expert smart lock installations in Calicut, Payyoli, and surrounding areas. Upgrade your security with advanced keyless locks that combine convenience and protection."
         longDescription="Our premium smart lock systems support fingerprint recognition, PIN credentials, RFID card, and mobile app control. Stay in control and manage entry access points from anywhere without traditional keys."
+        bgImage="/rounded-door-lock.png"
       />
       
       {/* Service Details Card */}

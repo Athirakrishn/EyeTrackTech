@@ -28,6 +28,7 @@ export default function Page() {
         title="IT Consulting"
         description="Our professional IT consulting services help you make strategic technology decisions to optimize your business operations and fuel growth."
         longDescription="We analyze your current digital systems, identify performance bottlenecks, and design customized software and networking plans that boost efficiency, security, and scalability. Whether you need structured cloud database tuning, data security management, or digital transformation blueprints, our experts ensure smooth, reliable, and future-ready IT infrastructure."
+        bgImage="/laptop.jpg"
       />
       
       {/* Service Details Card */}

@@ -28,6 +28,7 @@ export default function Page() {
         title="Network Cabling"
         description="We provide professional structured network cabling solutions for offices, commercial buildings, and homes across Payyoli, Calicut, and surrounding areas."
         longDescription="Our expert team designs and installs high-performance data networks using CAT6, CAT6A, and fiber optic cabling to ensure lightning-fast internet and stable device connectivity. From patch panel termination to comprehensive Fluke certification tests, we deliver clean, efficient, and future-proof networking setups."
+        bgImage="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
       />
       
       {/* Service Details Card */}

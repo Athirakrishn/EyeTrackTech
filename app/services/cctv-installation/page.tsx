@@ -34,6 +34,7 @@ export default function Page() {
         title="CCTV Installation"
         description="We provide expert CCTV installation services across Payyoli, Calicut, and surrounding areas designed to keep your home and business safe and secure."
         longDescription="Our certified technicians ensure perfect camera placement, quality cabling, and seamless system setup for maximum coverage and clear monitoring. Get real-time access through your mobile app and enjoy 24/7 protection with our reliable HD and IP camera systems."
+        bgImage="/cctv-office.jpg"
       />
       
       {/* Main Info Details Section */}

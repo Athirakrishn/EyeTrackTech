@@ -28,6 +28,7 @@ export default function Page() {
         title="Home/Gate Automation"
         description="We provide expert automatic gate opener and smart home automation installations in Calicut, Payyoli, and surrounding areas. Transform your home or business with intelligent access control systems."
         longDescription="Our gate automation and smart home solutions allow you to open gates, control doors, lights, and air conditioning remotely with just a tap on your phone. We deploy heavy-duty silent motor actuator arms and touch panel hubs to ensure smooth operation, durability, and enhanced safety."
+        bgImage="/door-lock.jpg"
       />
       
       {/* Service Details Card */}

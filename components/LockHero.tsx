@@ -20,9 +20,10 @@ interface LockHeroProps {
   title: string;
   description: string;
   longDescription: string;
+  bgImage: string;
 }
 
-export default function LockHero({ title, description, longDescription }: LockHeroProps) {
+export default function LockHero({ title, description, longDescription, bgImage }: LockHeroProps) {
   const lockFeatures = [
     {
       icon: ShieldCheck,
@@ -56,6 +57,15 @@ export default function LockHero({ title, description, longDescription }: LockHe
 
   return (
     <section className="relative pt-32 pb-20 md:py-36 overflow-hidden bg-slate-900 text-white min-h-[90vh] flex items-center">
+      {/* Background Image with Dark Overlay */}
+      <div className="absolute inset-0 z-0">
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-25"
+          style={{ backgroundImage: `url('${bgImage}')` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-950/60 via-slate-950/90 to-slate-950 z-10" />
+      </div>
+
       {/* Background Cyberpunk Accents */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#ff7e15]/10 rounded-full blur-3xl pointer-events-none -z-10" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#8a3ffc]/8 rounded-full blur-3xl pointer-events-none -z-10" />
