@@ -10,6 +10,24 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "Best CCTV Service in Calicut | Home automation Installation",
   description: "Best CCTV service in Calicut for homes and offices. We offer CCTV, home & gate automation, IP, WiFi & 4G camera installation. Call us today.",
+  keywords: [
+    "CCTV installation Calicut",
+    "best CCTV service in Calicut",
+    "CCTV camera dealers Kozhikode",
+    "home automation Calicut",
+    "automatic gate opener Kerala",
+    "sliding gate automation Calicut",
+    "smart locks Calicut",
+    "digital door locks Kerala",
+    "biometric access control Calicut",
+    "time attendance machine Kerala",
+    "network cabling Payyoli",
+    "CCTV installation Vadakara",
+    "CCTV installation Perambra",
+    "CCTV installation Kannur",
+    "CCTV installation Malappuram",
+    "Eye Track Solutions"
+  ],
   openGraph: {
     title: "Best CCTV Service in Calicut | Home automation Installation",
     description: "Best CCTV service in Calicut for homes and offices. We offer CCTV, home & gate automation, IP, WiFi & 4G camera installation. Call us today.",
