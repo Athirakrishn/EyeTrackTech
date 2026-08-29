@@ -131,7 +131,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-          <p>&copy; {new Date().getFullYear()} EYE TRACK SOLUTIONS PRED. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} EYE TRACK SOLUTIONS PVT LTD. All rights reserved.</p>
         </div>
       </div>
     </footer>

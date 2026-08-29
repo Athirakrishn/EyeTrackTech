@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Best CCTV Service in Calicut | Home automation Installation",
     description: "Best CCTV service in Calicut for homes and offices. We offer CCTV, home & gate automation, IP, WiFi & 4G camera installation. Call us today.",
     url: "https://eyetrack-tech.com/",
-    siteName: "EYE TRACK SOLUTIONS PRED",
+    siteName: "EYE TRACK SOLUTIONS PVT LTD",
     locale: "en_US",
     type: "website",
   },
