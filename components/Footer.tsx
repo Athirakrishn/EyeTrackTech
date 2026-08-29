@@ -54,7 +54,7 @@ export default function Footer() {
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#f2392c]/50 to-transparent"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
           <div>
             <img src="/eyetrack-logo.png" alt="EyeTrack Solutions Logo" className="h-16 w-auto mb-6" />
             <p className="text-gray-300 max-w-xs mb-6">
@@ -107,6 +107,16 @@ export default function Footer() {
               <li><Link href="/services/home-gate-automation" className="text-gray-300 hover:text-[#ff7e15] transition-colors text-xs uppercase tracking-wider font-medium">Home & Gate Automation</Link></li>
               <li><Link href="/services/network-cabling" className="text-gray-300 hover:text-[#ff7e15] transition-colors text-xs uppercase tracking-wider font-medium">Network Cabling</Link></li>
               <li><Link href="/services/it-consulting" className="text-gray-300 hover:text-[#ff7e15] transition-colors text-xs uppercase tracking-wider font-medium">IT Consulting</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-lg font-bold text-white mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-8 after:h-0.5 after:bg-[#f2392c]">Service Areas</h4>
+            <ul className="space-y-2">
+              <li><Link href="/locations/vadakara" className="text-gray-300 hover:text-[#ff7e15] transition-colors text-xs uppercase tracking-wider font-medium">Vadakara</Link></li>
+              <li><Link href="/locations/perambra" className="text-gray-300 hover:text-[#ff7e15] transition-colors text-xs uppercase tracking-wider font-medium">Perambra</Link></li>
+              <li><Link href="/locations/calicut" className="text-gray-300 hover:text-[#ff7e15] transition-colors text-xs uppercase tracking-wider font-medium">Calicut</Link></li>
+              <li><Link href="/locations/kannur" className="text-gray-300 hover:text-[#ff7e15] transition-colors text-xs uppercase tracking-wider font-medium">Kannur</Link></li>
+              <li><Link href="/locations/malappuram" className="text-gray-300 hover:text-[#ff7e15] transition-colors text-xs uppercase tracking-wider font-medium">Malappuram</Link></li>
             </ul>
           </div>
           <div>
