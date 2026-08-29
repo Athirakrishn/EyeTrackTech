@@ -30,10 +30,10 @@ const AnimatedNumber = ({ value, duration = 2 }: { value: number, duration?: num
 };
 
 const stats = [
-  { label: "Happy Clients", value: 500, suffix: "+" },
-  { label: "Installations", value: 1200, suffix: "+" },
-  { label: "Expert Technicians", value: 50, suffix: "+" },
-  { label: "Years Experience", value: 10, suffix: "+" },
+  { label: "Years Experience", value: 2, suffix: "+" },
+  { label: "Happy Customers", value: 200, suffix: "+" },
+  { label: "Expert Technicians", value: 20, suffix: "+" },
+  { label: "Completed Projects", value: 100, suffix: "+" },
 ];
 
 export default function Stats() {
