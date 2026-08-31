@@ -26,9 +26,9 @@ export default function Page() {
       {/* 3D Network Cabling Hero Header */}
       <CablingHero
         title="Network Cabling"
-        description="We provide professional structured network cabling solutions for offices, commercial buildings, and homes across Payyoli, Calicut, and surrounding areas."
+        description="Structured network cabling solutions for offices, commercial enterprises, and residences to ensure fast and stable connectivity."
         longDescription="Our expert team designs and installs high-performance data networks using CAT6, CAT6A, and fiber optic cabling to ensure lightning-fast internet and stable device connectivity. From patch panel termination to comprehensive Fluke certification tests, we deliver clean, efficient, and future-proof networking setups."
-        bgImage="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+        bgImage="/cabling-bg.jpg"
       />
       
       {/* Service Details Card */}

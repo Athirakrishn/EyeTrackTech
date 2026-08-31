@@ -32,8 +32,8 @@ export default function Page() {
       {/* 3D Interactive CCTV Hero Section */}
       <CCTVHero
         title="CCTV Installation"
-        description="We provide expert CCTV installation services across Payyoli, Calicut, and surrounding areas designed to keep your home and business safe and secure."
-        longDescription="Our certified technicians ensure perfect camera placement, quality cabling, and seamless system setup for maximum coverage and clear monitoring. Get real-time access through your mobile app and enjoy 24/7 protection with our reliable HD and IP camera systems."
+        description="Professional CCTV installation services designed to keep your home and business secure with high-definition and smart IP camera systems."
+        longDescription="Our certified technicians ensure optimal camera placement, durable cabling, and seamless mobile setup for complete 24/7 surveillance coverage."
         bgImage="/cctv-office.jpg"
       />
       
@@ -65,7 +65,7 @@ export default function Page() {
           <div className="lg:col-span-8 p-8 md:p-12 flex flex-col justify-center">
             <span className="text-xs font-bold uppercase tracking-widest text-[#8a3ffc] mb-3 block">Service Details</span>
             <p className="text-gray-800 text-lg leading-relaxed mb-6 font-semibold border-l-4 border-[#f2392c] pl-5">
-              Secure your property with the best CCTV installation services in Payyoli and Calicut. We build tailored surveillance solutions for residential and commercial layouts.
+              Secure your property with tailored surveillance solutions engineered for residential, retail, and commercial layouts.
             </p>
             <p className="text-gray-600 text-base leading-relaxed font-light">
               We deploy advanced IP cameras, high-definition analog setups, and smart network video recorders (NVR) with high-capacity storage. Every installation is designed to give you clear 1080p to 4K viewing, smart motion notifications, and live access from your phone or laptop anywhere in the world.

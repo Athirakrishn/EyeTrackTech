@@ -58,7 +58,7 @@ export default function Footer() {
           <div>
             <img src="/eyetrack-logo.png" alt="EyeTrack Solutions Logo" className="h-16 w-auto mb-6" />
             <p className="text-gray-300 max-w-xs mb-6">
-              Specializing in security and automation solutions. Best CCTV service in Calicut.
+              Specializing in smart surveillance, security integration, and automation solutions across Kerala.
             </p>
             <div className="flex gap-4">
               <a 

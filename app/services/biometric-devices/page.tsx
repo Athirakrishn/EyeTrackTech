@@ -26,7 +26,7 @@ export default function Page() {
       {/* 3D Biometric Hero Header */}
       <BiometricHero
         title="Biometric Devices"
-        description="We provide high-quality biometric devices for secure access control and attendance management in Payyoli, Calicut, and across Kerala."
+        description="High-accuracy biometric devices for secure access control and intelligent attendance management across commercial and institutional premises."
         longDescription="Our setups support fingerprint scanning, facial recognition, and RFID cards, ensuring accurate, spoof-proof, and fast authentication for offices, schools, and commercial institutions. From mounting and wiring to configuring database reports, we help you manage authorization points safely and efficiently."
         bgImage="/biometric.jpg"
       />
@@ -59,7 +59,7 @@ export default function Page() {
           <div className="lg:col-span-8 p-8 md:p-12 flex flex-col justify-center">
             <span className="text-xs font-bold uppercase tracking-widest text-[#8a3ffc] mb-3 block">Service Details</span>
             <p className="text-gray-800 text-lg leading-relaxed mb-6 font-semibold border-l-4 border-[#06b6d4] pl-5">
-              Secure fingerprint, face, and RFID-based access control and time attendance terminals for businesses and institutions in Calicut.
+              Secure fingerprint, face, and RFID-based access control and time attendance terminals for businesses and organizations.
             </p>
             <p className="text-gray-600 text-base leading-relaxed font-light">
               We deploy multi-modal biometric terminals supporting fingerprint scanning, 3D facial depth recognition, palm verification, and RFID card access. Each system includes cloud-synced attendance logs, configurable user schedules, anti-spoofing liveness detection, and mobile management dashboards. Perfect for offices, schools, factories, and gated communities.

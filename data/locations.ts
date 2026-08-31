@@ -13,35 +13,20 @@ export const locationData: Record<string, LocationInfo> = {
     slug: 'vadakara',
     name: 'Vadakara',
     district: 'Kozhikode',
-    title: 'Best CCTV Installation & Home Automation in Vadakara | Eye Track Solutions',
-    description: 'Premier CCTV camera installation, home & gate automation, smart locks, and biometric access control systems in Vadakara. Call +91 7994357565 for free consultation.',
+    title: 'CCTV Installation & Home Automation in Vadakara | Eye Track Solutions',
+    description: 'Professional CCTV camera installation, automatic gate openers, smart digital locks, and biometric access systems in Vadakara, Kerala.',
     keywords: [
       'cctv installation vadakara',
-      'best cctv dealers vadakara',
-      'cctv camera service vadakara',
-      'security camera installation vadakara',
       'home automation vadakara',
-      'automatic gate opener vadakara',
-      'sliding gate automation vadakara',
       'smart locks vadakara',
-      'digital door lock vadakara',
-      'biometric access control system vadakara',
-      'biometric attendance machine vadakara',
-      'ip camera installation vadakara',
-      'wifi cctv camera vadakara',
-      'structured network cabling vadakara',
-      'commercial security systems vadakara',
-      'cctv repair and maintenance vadakara',
-      'cp plus cctv camera vadakara',
-      'hikvision cctv vadakara',
-      'eye track solutions vadakara',
-      'security system dealers in vadakara'
+      'biometric systems vadakara',
+      'security camera service vadakara'
     ],
     jsonLd: {
       '@context': 'https://schema.org',
       '@type': 'LocalBusiness',
       name: 'Eye Track Solutions - Vadakara',
-      description: 'Expert CCTV installation, home & gate automation, smart digital locks, and biometric access control in Vadakara.',
+      description: 'Professional CCTV installation, home and gate automation, smart digital locks, and biometric access control in Vadakara.',
       url: 'https://eyetrack-tech.com/locations/vadakara',
       telephone: '+917994357565',
       address: {
@@ -50,41 +35,27 @@ export const locationData: Record<string, LocationInfo> = {
         addressRegion: 'Kerala',
         addressCountry: 'IN'
       },
-      areaServed: 'Vadakara',
-      keywords: 'CCTV installation, home automation, gate automation, smart locks, biometric systems Vadakara'
+      areaServed: 'Vadakara'
     }
   },
   perambra: {
     slug: 'perambra',
     name: 'Perambra',
     district: 'Kozhikode',
-    title: 'CCTV Camera Installation & Gate Automation in Perambra | Eye Track Solutions',
-    description: 'Trusted security camera installation, sliding gate automation, digital door locks, and biometric systems in Perambra. 24/7 support & reliable service.',
+    title: 'CCTV Installation & Smart Automation in Perambra | Eye Track Solutions',
+    description: 'Trusted CCTV surveillance, sliding gate automation, smart door locks, and biometric attendance systems in Perambra, Kerala.',
     keywords: [
       'cctv installation perambra',
-      'cctv camera service perambra',
-      'best cctv dealers in perambra',
-      'security cameras perambra',
-      'home automation perambra',
-      'automatic gate opener perambra',
-      'sliding gate automation perambra',
+      'gate automation perambra',
       'smart locks perambra',
-      'digital door locks perambra',
       'biometric attendance perambra',
-      'access control systems perambra',
-      'wifi camera perambra',
-      'network cabling perambra',
-      'cctv repair service perambra',
-      'residential security cameras perambra',
-      'commercial cctv installation perambra',
-      'eye track solutions perambra',
-      'cctv technicians perambra'
+      'security cameras perambra'
     ],
     jsonLd: {
       '@context': 'https://schema.org',
       '@type': 'LocalBusiness',
       name: 'Eye Track Solutions - Perambra',
-      description: 'CCTV camera installation, sliding gate automation, digital door locks, and biometric systems in Perambra.',
+      description: 'Trusted CCTV surveillance, sliding gate automation, smart door locks, and biometric attendance systems in Perambra.',
       url: 'https://eyetrack-tech.com/locations/perambra',
       telephone: '+917994357565',
       address: {
@@ -93,42 +64,27 @@ export const locationData: Record<string, LocationInfo> = {
         addressRegion: 'Kerala',
         addressCountry: 'IN'
       },
-      areaServed: 'Perambra',
-      keywords: 'CCTV installation, security cameras, gate automation, smart locks Perambra'
+      areaServed: 'Perambra'
     }
   },
   calicut: {
     slug: 'calicut',
     name: 'Calicut',
     district: 'Kozhikode',
-    title: 'Best CCTV Service in Calicut | Home & Gate Automation | Eye Track Solutions',
-    description: 'Top-rated CCTV camera installation, smart home automation, automatic gate openers, biometric access control, and smart locks in Calicut (Kozhikode).',
+    title: 'CCTV Installation & Automation Services in Calicut | Eye Track Solutions',
+    description: 'High-definition CCTV installation, automatic sliding gates, smart biometric locks, and network cabling solutions in Calicut (Kozhikode).',
     keywords: [
-      'best cctv service in calicut',
       'cctv installation calicut',
-      'cctv camera dealers in calicut',
-      'cctv installation kozhikode',
-      'home automation installation calicut',
-      'smart home solutions calicut',
-      'automatic gate opener calicut',
-      'sliding gate automation kozhikode',
-      'smart locks in calicut',
-      'digital door lock dealers calicut',
-      'biometric access control calicut',
-      'time attendance machine calicut',
-      'ip camera installation kozhikode',
-      'structured network cabling calicut',
-      'cctv amc service calicut',
-      'commercial cctv installation calicut',
-      'cctv repair kozhikode',
-      'eye track solutions calicut',
-      'security systems in calicut'
+      'home automation calicut',
+      'gate opener calicut',
+      'smart locks calicut',
+      'biometric access calicut'
     ],
     jsonLd: {
       '@context': 'https://schema.org',
       '@type': 'LocalBusiness',
       name: 'Eye Track Solutions - Calicut',
-      description: 'Top-rated CCTV camera installation, smart home automation, automatic gate openers, biometric access control, and smart locks in Calicut.',
+      description: 'High-definition CCTV installation, automatic sliding gates, smart biometric locks, and network cabling solutions in Calicut.',
       url: 'https://eyetrack-tech.com/locations/calicut',
       telephone: '+917994357565',
       address: {
@@ -138,40 +94,27 @@ export const locationData: Record<string, LocationInfo> = {
         postalCode: '673001',
         addressCountry: 'IN'
       },
-      areaServed: ['Calicut', 'Kozhikode'],
-      keywords: 'CCTV service Calicut, home automation Calicut, gate automation Kozhikode, smart locks Calicut'
+      areaServed: ['Calicut', 'Kozhikode']
     }
   },
   kannur: {
     slug: 'kannur',
     name: 'Kannur',
     district: 'Kannur',
-    title: 'CCTV Camera Installation & Home Automation in Kannur | Eye Track Solutions',
-    description: 'Leading CCTV surveillance systems, automatic gate motors, biometric attendance machines, and digital door locks in Kannur. High quality installation & service.',
+    title: 'CCTV Surveillance & Gate Automation in Kannur | Eye Track Solutions',
+    description: 'Expert CCTV surveillance setups, automatic gate motors, biometric attendance machines, and digital door locks in Kannur, Kerala.',
     keywords: [
-      'cctv camera installation kannur',
-      'best cctv dealers in kannur',
-      'cctv service center kannur',
-      'security camera services kannur',
+      'cctv installation kannur',
       'home automation kannur',
-      'automatic gate opener kannur',
-      'sliding gate automation kannur',
+      'gate motors kannur',
       'smart locks kannur',
-      'digital door locks in kannur',
-      'biometric attendance system kannur',
-      'access control solutions kannur',
-      'ip cctv camera installation kannur',
-      'structured network cabling kannur',
-      'commercial surveillance system kannur',
-      'cctv maintenance contract kannur',
-      'eye track solutions kannur',
-      'wifi security cameras kannur'
+      'biometric attendance kannur'
     ],
     jsonLd: {
       '@context': 'https://schema.org',
       '@type': 'LocalBusiness',
       name: 'Eye Track Solutions - Kannur',
-      description: 'Leading CCTV surveillance systems, automatic gate motors, biometric attendance machines, and digital door locks in Kannur.',
+      description: 'Expert CCTV surveillance setups, automatic gate motors, biometric attendance machines, and digital door locks in Kannur.',
       url: 'https://eyetrack-tech.com/locations/kannur',
       telephone: '+917994357565',
       address: {
@@ -180,39 +123,27 @@ export const locationData: Record<string, LocationInfo> = {
         addressRegion: 'Kerala',
         addressCountry: 'IN'
       },
-      areaServed: 'Kannur',
-      keywords: 'CCTV installation Kannur, home automation Kannur, gate opener Kannur, smart locks Kannur'
+      areaServed: 'Kannur'
     }
   },
   malappuram: {
     slug: 'malappuram',
     name: 'Malappuram',
     district: 'Malappuram',
-    title: 'CCTV Installation & Smart Security Solutions in Malappuram | Eye Track Solutions',
-    description: 'Professional CCTV camera setups, automatic sliding gates, smart biometric locks, and network cabling across Malappuram. Comprehensive residential & commercial security.',
+    title: 'CCTV Systems & Smart Security in Malappuram | Eye Track Solutions',
+    description: 'Commercial and residential CCTV camera installation, automatic sliding gates, digital door locks, and structured cabling in Malappuram.',
     keywords: [
-      'cctv camera installation malappuram',
-      'best cctv service malappuram',
-      'cctv camera dealers in malappuram',
-      'security camera installation malappuram',
-      'home automation services malappuram',
-      'automatic gate opener malappuram',
-      'sliding gate automation malappuram',
-      'smart locks in malappuram',
-      'digital lock installation malappuram',
-      'biometric access control malappuram',
-      'fingerprint attendance machine malappuram',
-      'wifi cctv installation malappuram',
-      'network cabling solutions malappuram',
-      'commercial security cameras malappuram',
-      'cctv repair and amc malappuram',
-      'eye track solutions malappuram'
+      'cctv installation malappuram',
+      'gate automation malappuram',
+      'smart locks malappuram',
+      'biometric systems malappuram',
+      'network cabling malappuram'
     ],
     jsonLd: {
       '@context': 'https://schema.org',
       '@type': 'LocalBusiness',
       name: 'Eye Track Solutions - Malappuram',
-      description: 'Professional CCTV camera setups, automatic sliding gates, smart biometric locks, and network cabling across Malappuram.',
+      description: 'Commercial and residential CCTV camera installation, automatic sliding gates, digital door locks, and structured cabling in Malappuram.',
       url: 'https://eyetrack-tech.com/locations/malappuram',
       telephone: '+917994357565',
       address: {
@@ -221,35 +152,27 @@ export const locationData: Record<string, LocationInfo> = {
         addressRegion: 'Kerala',
         addressCountry: 'IN'
       },
-      areaServed: 'Malappuram',
-      keywords: 'CCTV installation Malappuram, security camera dealers Malappuram, automatic gates Malappuram'
+      areaServed: 'Malappuram'
     }
   },
   payyoli: {
     slug: 'payyoli',
     name: 'Payyoli',
     district: 'Kozhikode',
-    title: 'CCTV Installation & Home Automation in Payyoli | Eye Track Solutions',
-    description: 'Expert CCTV installation, automatic gate openers, biometric access, and smart digital locks in Payyoli. Headquartered in Kizhur, Payyoli.',
+    title: 'CCTV Installation & Automation in Payyoli | Eye Track Solutions',
+    description: 'Expert CCTV camera setups, automatic gate systems, biometric devices, and digital locks in Payyoli. Headquartered in Kizhur, Payyoli.',
     keywords: [
       'cctv installation payyoli',
-      'cctv camera service payyoli',
-      'best cctv dealers in payyoli',
-      'home automation payyoli',
-      'automatic gate installation payyoli',
-      'sliding gate motor payyoli',
+      'gate automation payyoli',
       'smart locks payyoli',
-      'digital door lock payyoli',
       'biometric systems payyoli',
-      'network cabling payyoli',
-      'eye track solutions payyoli',
-      'security camera shop payyoli'
+      'network cabling payyoli'
     ],
     jsonLd: {
       '@context': 'https://schema.org',
       '@type': 'LocalBusiness',
       name: 'Eye Track Solutions - Payyoli',
-      description: 'Expert CCTV installation, automatic gate openers, biometric access, and smart digital locks in Payyoli.',
+      description: 'Expert CCTV camera setups, automatic gate systems, biometric devices, and digital locks in Payyoli.',
       url: 'https://eyetrack-tech.com/locations/payyoli',
       telephone: '+917994357565',
       address: {
@@ -260,34 +183,27 @@ export const locationData: Record<string, LocationInfo> = {
         postalCode: '673522',
         addressCountry: 'IN'
       },
-      areaServed: 'Payyoli',
-      keywords: 'CCTV installation Payyoli, smart locks Payyoli, gate automation Payyoli'
+      areaServed: 'Payyoli'
     }
   },
   koyilandy: {
     slug: 'koyilandy',
     name: 'Koyilandy',
     district: 'Kozhikode',
-    title: 'CCTV Camera Installation & Smart Automation in Koyilandy | Eye Track Solutions',
-    description: 'Professional CCTV systems, automatic gate openers, smart door locks, and networking services in Koyilandy and surrounding areas.',
+    title: 'CCTV Camera & Automation Services in Koyilandy | Eye Track Solutions',
+    description: 'Reliable CCTV surveillance, automatic sliding gate openers, smart door locks, and networking services across Koyilandy.',
     keywords: [
       'cctv installation koyilandy',
-      'best cctv camera service koyilandy',
-      'security camera installation koyilandy',
-      'home automation koyilandy',
-      'automatic gate opener koyilandy',
+      'gate automation koyilandy',
       'smart locks koyilandy',
-      'digital door lock koyilandy',
-      'biometric access control koyilandy',
-      'network cabling koyilandy',
-      'sliding gate automation koyilandy',
-      'eye track solutions koyilandy'
+      'biometric systems koyilandy',
+      'network cabling koyilandy'
     ],
     jsonLd: {
       '@context': 'https://schema.org',
       '@type': 'LocalBusiness',
       name: 'Eye Track Solutions - Koyilandy',
-      description: 'Professional CCTV systems, automatic gate openers, smart door locks, and networking services in Koyilandy.',
+      description: 'Reliable CCTV surveillance, automatic sliding gate openers, smart door locks, and networking services across Koyilandy.',
       url: 'https://eyetrack-tech.com/locations/koyilandy',
       telephone: '+917994357565',
       address: {
@@ -296,8 +212,7 @@ export const locationData: Record<string, LocationInfo> = {
         addressRegion: 'Kerala',
         addressCountry: 'IN'
       },
-      areaServed: 'Koyilandy',
-      keywords: 'CCTV installation Koyilandy, security camera dealers Koyilandy, gate automation Koyilandy'
+      areaServed: 'Koyilandy'
     }
   }
 };
@@ -323,29 +238,19 @@ export function getLocationData(slug: string): LocationInfo {
     slug: normalized,
     name: formattedName,
     district: 'Kerala',
-    title: `CCTV Installation & Home Automation in ${formattedName} | Eye Track Solutions`,
-    description: `Leading CCTV camera installation, smart locks, automatic gate openers, and biometric systems in ${formattedName}. Contact Eye Track Solutions for reliable security.`,
+    title: `CCTV Installation & Automation in ${formattedName} | Eye Track Solutions`,
+    description: `Professional CCTV camera installation, smart locks, automatic gate systems, and biometric solutions in ${formattedName}, Kerala.`,
     keywords: [
       `cctv installation ${formattedName.toLowerCase()}`,
-      `best cctv dealers in ${formattedName.toLowerCase()}`,
-      `security camera installation ${formattedName.toLowerCase()}`,
-      `cctv camera service ${formattedName.toLowerCase()}`,
       `home automation ${formattedName.toLowerCase()}`,
-      `automatic gate opener ${formattedName.toLowerCase()}`,
-      `sliding gate automation ${formattedName.toLowerCase()}`,
       `smart locks ${formattedName.toLowerCase()}`,
-      `digital door locks ${formattedName.toLowerCase()}`,
-      `biometric access control ${formattedName.toLowerCase()}`,
-      `time attendance machine ${formattedName.toLowerCase()}`,
-      `network cabling services ${formattedName.toLowerCase()}`,
-      `wifi cctv cameras ${formattedName.toLowerCase()}`,
-      `eye track solutions ${formattedName.toLowerCase()}`
+      `biometric systems ${formattedName.toLowerCase()}`
     ],
     jsonLd: {
       '@context': 'https://schema.org',
       '@type': 'LocalBusiness',
       name: `Eye Track Solutions - ${formattedName}`,
-      description: `Leading CCTV camera installation, smart locks, automatic gate openers, and biometric systems in ${formattedName}.`,
+      description: `Professional CCTV camera installation, smart locks, automatic gate systems, and biometric solutions in ${formattedName}.`,
       url: `https://eyetrack-tech.com/locations/${normalized}`,
       telephone: '+917994357565',
       address: {
@@ -354,8 +259,7 @@ export function getLocationData(slug: string): LocationInfo {
         addressRegion: 'Kerala',
         addressCountry: 'IN'
       },
-      areaServed: formattedName,
-      keywords: `CCTV installation, gate automation, smart locks ${formattedName}`
+      areaServed: formattedName
     }
   };
 }
