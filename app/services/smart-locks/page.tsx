@@ -26,7 +26,7 @@ export default function Page() {
       {/* 3D Smart Lock Hero Header */}
       <LockHero
         title="Smart Locks"
-        description="Upgrade your security with advanced keyless locks that combine keyless convenience, remote mobile access, and high-strength protection."
+        description="We provide expert smart lock installations in Calicut, Payyoli, and surrounding areas. Upgrade your security with advanced keyless locks that combine convenience and protection."
         longDescription="Our premium smart lock systems support fingerprint recognition, PIN credentials, RFID card, and mobile app control. Stay in control and manage entry access points from anywhere without traditional keys."
         bgImage="/rounded-door-lock.png"
       />
@@ -59,7 +59,7 @@ export default function Page() {
           <div className="lg:col-span-8 p-8 md:p-12 flex flex-col justify-center">
             <span className="text-xs font-bold uppercase tracking-widest text-[#8a3ffc] mb-3 block">Service Details</span>
             <p className="text-gray-800 text-lg leading-relaxed mb-6 font-semibold border-l-4 border-[#f2392c] pl-5">
-              Secure your residential or commercial property with state-of-the-art keyless locks, backed by our certified installation teams.
+              Secure your residential or commercial property with state-of-the-art keyless locks, backed by expert installation teams in Calicut.
             </p>
             <p className="text-gray-600 text-base leading-relaxed font-light">
               We supply and configure modern digital handle locks, glass door rim locks, and magnetic gate automation systems. Experience seamless control over entry access logs, remote passcode sharing for guests, and instant notifications on your mobile device whenever your door is accessed.

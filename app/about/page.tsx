@@ -42,10 +42,10 @@ export default function AboutPage() {
             <div className="w-full lg:w-2/3">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Security Solutions</h2>
               <p className="text-gray-600 leading-relaxed mb-6">
-                At <strong>Eye Track Solutions</strong>, we believe that true security is built on <strong>trust, technology, and precision</strong>. Our comprehensive <strong>security solutions</strong> are designed to safeguard every space — ensuring your safety <strong>24/7</strong>.
+                <strong>Eye Track Solution</strong>, we belive that true security is built on <strong>trust, technology, And precision</strong>. Our Comprehensive <strong>Security Solutions</strong> are designed to Safeguard every space- Ensuring your safety <strong>24/7</strong>
               </p>
               <p className="text-gray-600 leading-relaxed">
-                With years of expertise in the security and surveillance industry, we deliver <strong>end-to-end protection systems</strong> that combine <strong>high-definition CCTV cameras, smart biometric devices, and intelligent automation</strong>. Our goal is not only to prevent risks but also to provide <strong>peace of mind</strong> through continuous monitoring, intuitive control, and reliable performance.
+                With years of expertise in the security and surveillance industry, we deliver <strong>end-To-end protection system</strong> that combine <strong>high-definition CCTV cameras, Smart biometric devices, and intelligent automation</strong>. Our goal is not only to prevent risks but also to provide <strong>peace of mind</strong> through continues monitoring, Easy control, and reliable performance.
               </p>
             </div>
           </div>

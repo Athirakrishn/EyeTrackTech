@@ -26,7 +26,7 @@ export default function Page() {
       {/* 3D Gate Automation Hero Header */}
       <GateHero
         title="Home/Gate Automation"
-        description="Transform your property with intelligent automatic gate openers, motorized sliding gates, and centralized smart access controllers."
+        description="We provide expert automatic gate opener and smart home automation installations in Calicut, Payyoli, and surrounding areas. Transform your home or business with intelligent access control systems."
         longDescription="Our gate automation and smart home solutions allow you to open gates, control doors, lights, and air conditioning remotely with just a tap on your phone. We deploy heavy-duty silent motor actuator arms and touch panel hubs to ensure smooth operation, durability, and enhanced safety."
         bgImage="/door-lock.jpg"
       />
@@ -59,7 +59,7 @@ export default function Page() {
           <div className="lg:col-span-8 p-8 md:p-12 flex flex-col justify-center">
             <span className="text-xs font-bold uppercase tracking-widest text-[#8a3ffc] mb-3 block">Service Details</span>
             <p className="text-gray-800 text-lg leading-relaxed mb-6 font-semibold border-l-4 border-[#f2392c] pl-5">
-              Automate your sliding or swing gates and integrate custom home controllers, backed by our experienced installation team.
+              Automate your sliding or swing gates and integrate custom home hub controllers, backed by our professional technicians in Payyoli and Calicut.
             </p>
             <p className="text-gray-600 text-base leading-relaxed font-light">
               We configure heavy-duty automatic sliding gate operators, double swing arm actuator drives, and sleek wall-mounted touch hubs. Enhance security using integrated loop sensors that prevent accidental gate closure on vehicles, set schedules for driveway path lights, and manage all streams or access locks from a single mobile dashboard.
